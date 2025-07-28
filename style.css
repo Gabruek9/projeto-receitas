@@ -1,0 +1,93 @@
+@charset "UTF8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    --fontecabecalho: 'Montserrat';
+    --fontetexto: 'Lato';
+    --fontedestaque: 'Rubik';
+}
+  
+*{
+    margin: 0px;
+    padding: 0px;
+}
+h2 {
+    padding-left: 10px;
+    font-weight: bolder;
+    color: #38230f;
+}
+ul{
+    list-style-type: none;
+}
+li > img {
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+    display: inline-block;
+    vertical-align: middle;
+}
+main , body {
+    min-height: 100vh;
+    background-color: lightslategray;
+    font-family: var(--fontecabecalho);
+}
+header {
+    background-color:#5D3A1A;
+    color: #FFF5E1;
+    font-family: var(--fontedestaque);
+    font-size: 20px;
+    text-align: center;
+}
+header > h1 {
+    padding-top: 10px;
+}
+header > p {
+    padding-bottom: 5px;
+}
+
+a{
+    color: #FFF5E1;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline;
+}
+body{
+    background-color:#FFF5E1;
+    color: black;   
+}
+section{
+    font-family: var(--fontetexto);
+    line-height: 2em;
+    padding: 2vh;
+    padding-left: 10px;
+    font-size: 1vw;
+}
+section > p {
+    padding-bottom: 2em;
+}
+
+section.imagem{
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > ul {
+    background-color: rgba(0, 0, 0, 0.644);
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+}
+section#img01{
+    background-image: url(imagens/petit-gateau.jpg);
+    background-position: center center;
+}
+footer{
+    background-color: #5D3A1A;
+    color: #FFF5E1;
+    text-align: center;
+    padding: 5px;
+}
