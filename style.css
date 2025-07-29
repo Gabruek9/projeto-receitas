@@ -34,9 +34,22 @@ a > img {
     display: block;
     border-radius: 15px 15px 0px 0px;
     border-bottom: 5px solid wheat;
+    transition: transform 0.3s ease;
+}
+a:hover > img {
+    transform: scale(1.05);
+}
+
+a{
+    color: #FFF5E1;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline;
 }
 main , body {
-    min-height: 100vh;
+    min-height: 97vh;
     background-color: lightslategray;
     font-family: var(--fontecabecalho);
 }
@@ -59,18 +72,12 @@ article > h1 {
     text-align: center;
     font-size: 30px;
 }
+
 h1 > a {
     color: #5D3A1A;
     text-decoration: none;
 }
-a{
-    color: #FFF5E1;
-    text-decoration: none;
-    font-weight: bolder;
-}
-a:hover{
-    text-decoration: underline;
-}
+
 body{
     background-color:#FFF5E1;
     color: black;   
@@ -100,7 +107,7 @@ section.imagem > ul {
 }
 section#img01{
     background-image: url(imagens/petit-gateau.jpg);
-    background-position: center center;
+    background-position: top center;
 }
 footer{
     background-color: #5D3A1A;
