@@ -21,11 +21,19 @@ ul{
     list-style-type: none;
 }
 li > img {
+    background-size: cover;
     width: 35px;
     height: 35px;
     border-radius: 100px;
     display: inline-block;
     vertical-align: middle;
+}
+a > img {
+    width: 20vw;
+    height: 25vh;
+    display: block;
+    border-radius: 15px 15px 0px 0px;
+    border-bottom: 5px solid wheat;
 }
 main , body {
     min-height: 100vh;
@@ -45,7 +53,16 @@ header > h1 {
 header > p {
     padding-bottom: 5px;
 }
-
+article > h1 {
+    margin:25px 0px 10px 10px ;
+    display: inline-block;
+    text-align: center;
+    font-size: 30px;
+}
+h1 > a {
+    color: #5D3A1A;
+    text-decoration: none;
+}
 a{
     color: #FFF5E1;
     text-decoration: none;
@@ -90,4 +107,7 @@ footer{
     color: #FFF5E1;
     text-align: center;
     padding: 5px;
+}
+footer > h1 > a{
+    color: #FFF5E1;
 }
